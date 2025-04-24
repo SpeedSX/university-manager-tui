@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "A Terminal-based User Interface (TUI) application for managing university data"
 readme = "README.md"
 requires-python = ">=3.7"
-license = {text = "MIT"}
+license = "MIT"
 dependencies = [
     "textual>=0.40.0",
     "rich>=13.3.5",
@@ -17,6 +17,9 @@ dependencies = [
 [project.urls]
 "Homepage" = "https://github.com/yourusername/university-manager-tui"
 "Bug Tracker" = "https://github.com/yourusername/university-manager-tui/issues"
+
+[tool.setuptools]
+py-modules = ["app", "models", "data_manager"]
 
 [tool.pylint.messages_control]
 disable = [
