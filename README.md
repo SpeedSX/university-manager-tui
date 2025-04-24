@@ -1,1 +1,1 @@
-"# university-manager-tui" 
+# university-manager-tui
