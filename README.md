@@ -25,8 +25,7 @@ A Terminal-based User Interface (TUI) application for managing university data i
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
-   cd student_manager
+   git clone https://github.com/SpeedSX/university-manager-tui
    ```
 
 2. Install required dependencies:
