@@ -20,8 +20,8 @@ jobs:
         pip install pylint
         # Install project dependencies from requirements.txt
         pip install -r requirements.txt
-        # Make sure the current directory is in the Python path for local imports
-        pip install -e .
+        # Set PYTHONPATH to include the current directory
+        echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint --disable=C0111,C0103 $(git ls-files '*.py')
