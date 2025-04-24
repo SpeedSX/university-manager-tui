@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "university-manager-tui"
+version = "0.1.0"
+description = "A Terminal-based User Interface (TUI) application for managing university data"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+dependencies = [
+    "textual>=0.40.0",
+    "rich>=13.3.5",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/university-manager-tui"
+"Bug Tracker" = "https://github.com/yourusername/university-manager-tui/issues"
+
+[tool.pylint.messages_control]
+disable = [
+    "C0111", # missing-docstring
+    "C0103", # invalid-name
+    "C0303", # trailing-whitespace
+    "W0621", # redefined-outer-name
+]
