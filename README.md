@@ -1,5 +1,6 @@
 # University Manager TUI
 
+[![Pylint](https://github.com/SpeedSX/university-manager-tui/actions/workflows/pylint.yml/badge.svg)](https://github.com/SpeedSX/university-manager-tui/actions/workflows/pylint.yml)
 A Terminal-based User Interface (TUI) application for managing university data including students, teachers, and faculties. Built with Python and the Textual library.
 
 ## Features
